@@ -1,0 +1,20 @@
+secret_number=int(input("enter the number"))
+lives=5
+print("You have 5 attempts")  
+while lives>0:
+    guess=int(input("Enter your guess"))
+    if guess==secret_number:
+        print("You guessed the correct number")
+        break
+    Difference=secret_number - guess
+    if Difference<=5:
+        print("Very Close")
+    elif Difference<=10:
+        print("Close")
+    else:
+        print("Far away")
+    lives=lives-1
+    print("Remaining lives",lives)
+    if(lives==0):
+        print("Gameover")
+        print("Your secret number was ",secret_number)
