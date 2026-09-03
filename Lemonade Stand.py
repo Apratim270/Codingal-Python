@@ -3,4 +3,4 @@ def total_calc(bill_amount,tip_percentage)
     total=round(total,2)
     print("Please pay ",total)
 
-total_calc(150,20)
+total_calc(15.
